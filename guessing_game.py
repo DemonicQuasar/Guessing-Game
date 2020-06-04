@@ -21,6 +21,13 @@ while True:
 
     if randnum == guess:
         print(f'Congratulations! Only {len(guesslist)} tries'.upper())
+        again = input('Do you want to play again? y/n').upper()
+        if again == 'Y':
+            continue
+        elif again == 'N':
+            break
+        else:
+            break
         break
 
     if len(guesslist) == 1 and abs(randnum - guess) <= 10:

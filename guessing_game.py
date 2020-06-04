@@ -14,7 +14,6 @@ def is_integer(n):
         return True
 
 randnum = randint(1, 100)
-print(randnum)
 guesslist = []
 
 while True:
